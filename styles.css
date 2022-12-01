@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: grid;
+    height: 100vh;
+}
+nav{
+    position: fixed;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;    background-color: white;
+    top: 0;
+}
+.links{
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.links li{
+    list-style: none;
+}
+.links li a{
+    text-decoration: none;
+    color: black;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-weight: 450;
+    transition: 0.1s ease-in-out;
+    padding: 5px;
+}
+.links li a::after{
+    border-bottom: 2px solid black;
+
+}
+.links li a:hover{
+    border-bottom: 2px solid black;
+}
+.logo p{
+    font-family: monospace;
+    font-size: 20px;
+}
+section{
+    width: fit-content;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+#colorText{
+    border: none;
+    outline-color: transparent;
+    padding: 5px;
+    width: 350px;
+    background-color: black;
+    border-radius: 7px;
+}
+#colorText h2{
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    font-size: 20px;
+}
+#btn{
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px double black;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    cursor: pointer;
+    transition: 0.2s ease;
+    box-shadow: 1px 1px 1px 1px black;
+
+}
+#btn:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 2px 3px 1px 1px black;
+
+}
